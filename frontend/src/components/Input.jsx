@@ -15,7 +15,7 @@ const Input = ({
       <input
         type={type}
         placeholder={val}
-        className="input w-full max-w-xs text-black"
+        className="input input-bordered input-error w-full max-w-xs text-black"
         disabled
       />
     );
@@ -24,7 +24,7 @@ const Input = ({
     <input
       type={type}
       placeholder={placeholder}
-      className="input w-full max-w-xs text-black"
+      className="input input-bordered input-error w-full max-w-xs text-black"
       id={id}
       value={value}
       onChange={(e) => {
@@ -38,7 +38,7 @@ const Input = ({
       <input
         type={type}
         placeholder={placeholder}
-        className="input w-full max-w-xs text-black"
+        className="input input-bordered input-error w-full max-w-xs text-black"
         id={id}
         value={value}
         onChange={(e) => {
@@ -53,7 +53,7 @@ const Input = ({
     <input
       type={type}
       placeholder={placeholder}
-      className="input w-full max-w-xs text-black"
+      className="input input-bordered input-error w-full max-w-xs text-black"
       id={id}
       value={value}
       onChange={(e) => onChange(e.target.value)}

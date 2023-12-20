@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full bg-primary shadow-md top-0 sticky">
+      <nav className="w-full bg-primary shadow-md top-0 sticky z-2">
         <div className="flex justify-between p-1 px-12">
           <div className="flex items-center text-white text-20px font-bold">
             <h1>Maulana Dimyati</h1>
