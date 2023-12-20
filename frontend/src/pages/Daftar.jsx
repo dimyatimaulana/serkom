@@ -48,7 +48,6 @@ const Daftar = () => {
   const filteredPendaftar = getFilteredPendaftar(nama, pendaftar);
 
   const setIPKTerdaftar = () => {
-    console.log(filteredPendaftar);
     setTimeout(() => {
       if (filteredPendaftar.length > 0) {
         setPrevIPK(filteredPendaftar[0].ipk);
@@ -72,8 +71,7 @@ const Daftar = () => {
         status_pengajuan: "belum diverifikasi",
       })
       .then((response) => {
-        setMsg(response.data.msg);
-        toast.success(`${msg}`);
+        toast.success(`${response.data.msg}`);
         setTimeout(() => {
           navigate("/hasil");
         }, 5000);
@@ -104,31 +102,33 @@ const Daftar = () => {
           step="0.01"
           placeholder="E.g. 3,5"
           id="ipk"
-          className="input w-full max-w-xs text-black"
+          className="input input-bordered input-error w-full max-w-xs text-black"
           value={prevIPK}
           readOnly
         ></input>
       );
     } else if (parseFloat(prevIPK) > 3) {
+      document.getElementById("beasiswa").focus();
       return (
         <input
           type="number"
           step="0.01"
           placeholder="E.g. 3,5"
           id="ipk"
-          className="input w-full max-w-xs text-black"
+          className="input input-bordered input-error w-full max-w-xs text-black"
           value={prevIPK}
           readOnly
         ></input>
       );
     } else {
+      // untuk pendaftar baru memasukan ipk
       return (
         <input
           type="number"
           step="0.01"
           placeholder="E.g. 3,5"
           id="ipk"
-          className="input w-full max-w-xs text-black"
+          className="input input-bordered input-error w-full max-w-xs text-black"
           value={ipk}
           onChange={(e) => setIPK(e.target.value)}
         ></input>
@@ -151,7 +151,7 @@ const Daftar = () => {
               <input
                 type="text"
                 placeholder="E.g. Maulana Dimyati"
-                className="input w-full max-w-xs text-black"
+                className="input input-bordered input-error w-full max-w-xs text-black"
                 id="name"
                 value={nama}
                 onChange={(e) => {
@@ -200,7 +200,7 @@ const Daftar = () => {
               <span className="flex items-center">Semester saat ini</span>
               {/* <Select id={"semester"} value={semester} onChange={setSemester} /> */}
               <select
-                className="select w-full max-w-xs text-black flex items-center"
+                className="select select-error w-full max-w-xs text-black flex items-center"
                 id={"semester"}
                 value={semester}
                 onChange={(e) => setSemester(e.target.value)}
@@ -224,7 +224,7 @@ const Daftar = () => {
               <span className="flex items-center">Pilihan Beasiswa</span>
               {parseFloat(prevIPK) < 3 ? (
                 <select
-                  className="select w-full max-w-xs text-black flex items-center"
+                  className="select select-error w-full max-w-xs text-black flex items-center"
                   id={"beasiswa"}
                   disabled
                 >
@@ -234,7 +234,7 @@ const Daftar = () => {
                 </select>
               ) : (
                 <select
-                  className="select w-full max-w-xs text-black flex items-center"
+                  className="select select-error w-full max-w-xs text-black flex items-center"
                   id={"beasiswa"}
                   value={beasiswa}
                   onChange={(e) => setBeasiswa(e.target.value)}
@@ -255,14 +255,14 @@ const Daftar = () => {
               {parseFloat(prevIPK) < 3 ? (
                 <input
                   type="file"
-                  className="file-input w-full max-w-xs flex items-center"
+                  className="file-input input-bordered input-error w-full max-w-xs flex items-center"
                   id="dokumen"
                   disabled
                 />
               ) : (
                 <input
                   type="file"
-                  className="file-input w-full max-w-xs flex items-center"
+                  className="file-input input-bordered input-error w-full max-w-xs flex items-center"
                   id="dokumen"
                   value={dokumen}
                   onChange={(e) => setDokumen(e.target.value)}
