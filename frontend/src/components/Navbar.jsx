@@ -24,7 +24,7 @@ const Navbar = () => {
       <nav className="w-full bg-primary shadow-md top-0 sticky z-2">
         <div className="flex justify-between p-1 px-12">
           <div className="flex items-center text-white text-20px font-bold">
-            <h1>Maulana Dimyati</h1>
+            <h1>Scholarship Connect</h1>
           </div>
           <button
             className="p-3 my-2 space-y-2 bg-secondary rounded shadow md:hidden"
