@@ -123,7 +123,7 @@ const Hasil = () => {
                 </tbody>
               </table>
             </div>
-            <nav className="flex justify-center">
+            <nav className="flex justify-center pb-6">
               <ul className="join">
                 <li className="join-item btn border border-slate-300">
                   <a href="#" className="page-link " onClick={prevPage}>
