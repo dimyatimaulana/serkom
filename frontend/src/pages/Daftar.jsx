@@ -138,7 +138,7 @@ const Daftar = () => {
 
   return (
     <Layout>
-      <div className=" flex h-screen justify-center bg-background">
+      <div className="flex h-screen justify-center">
         <ToastContainer />
         <div className="container w-4/5 pt-4 lg:flex lg:flex-col lg:place-items-center">
           <h1 className="text-xl font-bold mb-4">Daftar</h1>

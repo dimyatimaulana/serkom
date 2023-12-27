@@ -63,7 +63,7 @@ const Hasil = () => {
   if (pendaftar.length <= 0) {
     return (
       <Layout>
-        <div className=" flex h-screen justify-center bg-background">
+        <div className=" flex h-screen justify-center">
           <div className="container w-4/5 pt-4 lg:flex lg:flex-col lg:place-items-center">
             <h1 className="text-xl font-bold mb-4">Hasil</h1>
             <div className="pt-4 text-center">
@@ -77,7 +77,7 @@ const Hasil = () => {
 
   return (
     <Layout>
-      <div className=" flex h-screen justify-center bg-background">
+      <div className=" flex h-screen justify-center">
         <div className="container w-4/5 pt-4 lg:flex lg:flex-col lg:place-items-center">
           <h1 className="text-xl font-bold mb-4">Hasil</h1>
           <div className="grid gap-4">
