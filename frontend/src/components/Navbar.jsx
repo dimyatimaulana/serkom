@@ -27,13 +27,13 @@ const Navbar = () => {
             <h1>Maulana Dimyati</h1>
           </div>
           <button
-            className="p-4 my-2 space-y-2 bg-secondary rounded shadow md:hidden"
+            className="p-3 my-2 space-y-2 bg-secondary rounded shadow md:hidden"
             id="hamBtn"
             onClick={openCloseNav}
           >
-            <span className="block w-8 h-0.5 bg-gray-100"></span>
-            <span className="block w-8 h-0.5 bg-gray-100"></span>
-            <span className="block w-8 h-0.5 bg-gray-100"></span>
+            <span className="block w-7 h-0.5 bg-gray-100"></span>
+            <span className="block w-7 h-0.5 bg-gray-100"></span>
+            <span className="block w-7 h-0.5 bg-gray-100"></span>
           </button>
           <ul className="hidden md:flex  text-white p-1 w-full justify-end gap-3 items-center basis-3/4 text-xs font-semibold">
             <NavLink className="p-2" to={"/"}>
