@@ -26,11 +26,11 @@ const Welcome = () => {
           <h1 className="font-bold text-xl md:text-3xl" data-aos="fade-up">
             Untuk melanjutkan silahkan pilih menu daftar
           </h1>
-          <div className="p-4 ps-0" data-aos="fade-up">
-            <a href="/daftar" className="p-4 ps-6 pe-6 bg-black rounded-xl">
+          <button className="flex p-4 ps-0" data-aos="fade-up">
+            <a href="/daftar" className="p-4 ps-6 pe-6 bg-black rounded-xl" id="btnDaftar">
               Daftar
             </a>
-          </div>
+          </button>
         </div>
       </div>
     </div>
